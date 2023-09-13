@@ -1,0 +1,131 @@
+@font-face {
+    font-family: "My Custom Font";
+    src: url("../fonts/Orchard.ttf") format("truetype");
+  }
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "My Custom Font", "Poppins", sans-serif;
+}
+
+#logo{
+    height: 150px;
+    width: auto;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+.header-container{
+    width: min(90vw, 150rem);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+header{
+    background-color: #74BDCB;
+    font-size: 32px;
+}
+
+.main-content-wrapper{
+    width: min(90vw, 150rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    gap: 40px;
+    font-size: 2rem;
+    padding: 40px;
+}
+
+.image-layout{
+    font-size: 2rem;
+    margin: auto;
+    width: min(90vw, 150rem);
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2,auto);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.image-layout h2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+div[class*="item"] {
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+main{
+    background-color: rgba(255, 170, 0, 0.699);
+}
+
+article{
+    background-color: #ff577e8b;
+}
+
+.team-wrapper{
+    font-size: 2rem;
+    width: min(90vw, 150rem);
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+div[class*="employee"] {
+    padding: 40px;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(215, 211, 211, 0.67);
+}
+
+.team-wrapper h3{
+    grid-column: 2/3;
+}
+
+.image-layout img {
+    width: 250px;
+    height: auto
+}
+
+.team-wrapper img{
+    width: 350px;
+    height: auto;
+}

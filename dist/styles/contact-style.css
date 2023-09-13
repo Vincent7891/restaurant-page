@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "My Custom Font";
+    src: url("../fonts/Orchard.ttf") format("truetype");
+  }
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "My Custom Font", "Poppins", sans-serif;
+}
+
+#logo{
+    height: 150px;
+    width: auto;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+.header-container{
+    width: min(90vw, 150rem);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+header{
+    background-color: #74BDCB;
+    font-size: 32px;
+}
+
+label, input, textarea {
+    margin-bottom: 15px;
+}
+
+/* Form container */
+.form-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+form{
+    font-size: 26px;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    display: inline-block;
+    width: 150px;
+}
+
+/* Input fields */
+input[type="text"], input[type="date"], textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 22px;
+}
+
+
+
+/* Submit button */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr auto;
+    justify-items: center;
+    background-color: rgba(255, 170, 0, 0.699);
+    height: 100vh;
+}
+
+main h1{
+    align-self: end;
+    font-size: 4rem;
+}
